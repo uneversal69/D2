@@ -1,0 +1,40 @@
+table {
+    margin: 0 auto;
+    table-layout: fixed;
+    width:800px
+}
+td {
+    word-wrap:break-word;
+}
+html {
+    background-color: #514c52;
+    font-size: 25px; /* px значит 'пиксели': базовый шрифт будет 10 пикселей в высоту  */
+    font-family: 'Pangolin', cursive;
+  }
+  h1 {
+    font-size: 36px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    color: #f1bc28;
+    text-shadow: 3px 3px 1px black;
+  }
+  li {
+    font-size: 20px;
+    margin: 0;
+    padding: 20px 0;
+    color: #f1bc28;
+    text-shadow: 3px 3px 1px black;
+  }
+  
+td,th {
+    color:#dba736;
+    font-size: 16px;
+    text-align: center;
+    line-height: 2;
+    letter-spacing: 1px;
+  }
+
+  ul { margin: 0 auto; padding: 0; margin: 0; display: flex; }
+li { margin: 0 auto; list-style-type: none; padding: 8px; }
+  
