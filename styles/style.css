@@ -1,17 +1,13 @@
 table {
     margin: 0 auto;
-    table-layout: fixed;
-    width:800px
+    width:70%;
 }
 td {
     word-wrap:break-word;
 }
-html {
-    background-color: #514c52;
-    font-size: 25px; /* px значит 'пиксели': базовый шрифт будет 10 пикселей в высоту  */
-    font-family: 'Pangolin', cursive;
-  }
+
   h1 {
+    font-family: "Exocet Blizzard";
     font-size: 36px;
     text-align: center;
     margin: 0;
@@ -19,14 +15,23 @@ html {
     color: #f1bc28;
     text-shadow: 3px 3px 1px black;
   }
-  li {
+  li,footer {
+    font-family: "Exocet Blizzard";
     font-size: 20px;
     margin: 0;
     padding: 20px 0;
     color: #f1bc28;
     text-shadow: 3px 3px 1px black;
   }
-  
+p {
+  margin: 0;
+  padding-bottom: 0;
+  letter-spacing: 1px;
+  color:#dba736;
+  font-family: "Exocet Blizzard";
+  font-size: 20px;
+
+}
 td,th {
     color:#dba736;
     font-size: 16px;
@@ -38,3 +43,40 @@ td,th {
   ul { margin: 0 auto; padding: 0; margin: 0; display: flex; }
 li { margin: 0 auto; list-style-type: none; padding: 8px; }
   
+html {
+  font-family: 'Arial', sans-serif;
+  font-size: 25px;
+}
+
+.tooltip {
+  margin: 0;
+  position: absolute;
+  color:white;
+  padding: 15px;
+    font-size: 14px;
+  border-radius: 4px;
+  font-style: normal;
+  text-align: center;
+  font-family: "Exocet Blizzard";
+  background-color: rgba(100, 100, 100, 0.5);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+}
+
+body {
+  border: 1px solid black;
+  margin:0;
+  padding: 8px;
+  background-color: rgba(100, 100, 100, 0.5);
+  background: url('../images/back.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  }
+
+  @font-face {
+    font-family: "Exocet Blizzard";
+    src: url('../fonts/exocet-blizzard-medium.eot');
+    src: url('../fonts/exocet-blizzard-medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/exocet-blizzard-medium.woff') format('woff'),
+         url('../fonts/exocet-blizzard-medium.ttf') format('truetype'),
+         url('../fonts/exocet-blizzard-medium.svg#svgExocetReaper') format('svg');
+   }

@@ -1,17 +1,16 @@
 table {
     margin: 0 auto;
-    table-layout: fixed;
-    width:800px
+    width:70%;
 }
 td {
     word-wrap:break-word;
 }
 html {
-    background-color: #2e2c26;
     font-size: 25px; /* px значит 'пиксели': базовый шрифт будет 10 пикселей в высоту  */
-    font-family: 'Pangolin', cursive;
+    font-family: 'Arial', sans-serif;
   }
   h1 {
+    font-family: "Exocet Blizzard";
     font-size: 36px;
     text-align: center;
     margin: 0;
@@ -20,7 +19,8 @@ html {
     text-shadow: 3px 3px 1px black;
   }
 
-  li {
+  li,footer {
+    font-family: "Exocet Blizzard";
     font-size: 20px;
     margin: 0;
     padding: 20px 0;
@@ -36,4 +36,21 @@ td  {
   }
   ul { margin: 0 auto; padding: 0; margin: 0; display: flex; }
 li { margin: 0 auto; list-style-type: none; padding: 8px; }
-  
+
+body {
+  border: 1px solid black;
+  margin:0;
+  padding: 8px;
+  background: url('../images/back.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  }
+
+   @font-face {
+    font-family: "Exocet Blizzard";
+    src: url('../fonts/exocet-blizzard-medium.eot');
+    src: url('../fonts/exocet-blizzard-medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/exocet-blizzard-medium.woff') format('woff'),
+         url('../fonts/exocet-blizzard-medium.ttf') format('truetype'),
+         url('../fonts/exocet-blizzard-medium.svg#svgExocetReaper') format('svg');
+   }

@@ -1,0 +1,37 @@
+<HTML>
+    <head>
+    
+    </head>
+    <body class ="body"  style="background-color: rgb(0, 100, 0);">
+        <div>
+
+        </div>
+        <h1>
+            
+        </h1>
+        <p>
+Рандомный цвет бекграунда
+<button class="random"id="buttons">ТЫК</button>
+        </p>
+        <script>
+            let randombutton = document.querySelectorAll(".random");
+let rColor = 1;
+let gColor = 1;
+let bColor = 1;;
+
+buttons.addEventListener("click", function() {
+    return rColor = Math.floor(Math.random() * 254) + 1;
+    return gColor = Math.floor(Math.random() * 254) + 1;
+    return bColor = Math.floor(Math.random() * 254) + 1;
+    body.StyleSheet = rgb(rColor,gColor,bColor);
+  
+});
+
+console.log(bColor)
+
+        </script>
+    </body>
+    <footer>
+
+    </footer>
+</HTML>

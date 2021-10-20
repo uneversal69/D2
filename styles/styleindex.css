@@ -1,0 +1,68 @@
+table {
+    margin: 0 auto;
+    table-layout: fixed;
+    width:800px
+}
+td {
+    word-wrap:break-word;
+}
+
+  h1  {
+    font-family: "Exocet Blizzard";
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    color: #f1bc28;
+    text-shadow: 3px 3px 1px black;
+  }
+  h2
+  { font-family: "Exocet Blizzard";
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    color: #f1bc28;
+    text-shadow: 3px 3px 1px black;
+  }
+  li,footer {
+    font-family: "Exocet Blizzard";
+    font-size: 20px;
+    margin: 0;
+    padding: 20px 0;
+    color: #f1bc28;
+    text-shadow: 3px 3px 1px black;
+  }
+  
+p {
+    color:#dba736;
+    font-size: 16px;
+    text-align: center;
+    line-height: 2;
+    letter-spacing: 1px;
+  }
+
+  ul { margin: 0 auto; padding: 0; margin: 0; display: flex; }
+li { margin: 0 auto; list-style-type: none; padding: 8px; }
+  
+html {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+}
+body {
+  border: 1px solid black;
+  margin:0;
+  padding: 8px;
+  background: url('../images/back.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  }
+
+  @font-face {
+    font-family: "Exocet Blizzard";
+    src: url('../fonts/exocet-blizzard-medium.eot');
+    src: url('../fonts/exocet-blizzard-medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/exocet-blizzard-medium.woff') format('woff'),
+         url('../fonts/exocet-blizzard-medium.ttf') format('truetype'),
+         url('../fonts/exocet-blizzard-medium.svg#svgExocetReaper') format('svg');
+   }
