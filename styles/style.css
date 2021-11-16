@@ -1,82 +1,169 @@
 table {
-    margin: 0 auto;
-    width:70%;
+  margin: 0 auto;
+  width:70%;
 }
 td {
-    word-wrap:break-word;
+  word-wrap:break-word;
 }
 
-  h1 {
-    font-family: "Exocet Blizzard";
-    font-size: 36px;
-    text-align: center;
-    margin: 0;
-    padding: 20px 0;
-    color: #f1bc28;
-    text-shadow: 3px 3px 1px black;
-  }
-  li,footer {
-    font-family: "Exocet Blizzard";
-    font-size: 20px;
-    margin: 0;
-    padding: 20px 0;
-    color: #f1bc28;
-    text-shadow: 3px 3px 1px black;
-  }
+h1 {
+  font-family: "Exocet Blizzard";
+  font-size: 36px;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  color: #f1bc28;
+  text-shadow: 3px 3px 1px black;
+}
+footer {
+  font-family: "Exocet Blizzard";
+  font-size: 20px;
+  margin: 0;
+  padding: 20px 0;
+  color: #f1bc28;
+  text-shadow: 3px 3px 1px black;
+}
 p {
+margin: 0;
+padding-bottom: 0;
+letter-spacing: 1px;
+color:#dba736;
+font-family: "Exocet Blizzard";
+font-size: 20px;
+
+}
+.div {
   margin: 0;
   padding-bottom: 0;
   letter-spacing: 1px;
   color:#dba736;
   font-family: "Exocet Blizzard";
-  font-size: 20px;
-
-}
-td,th {
-    color:#dba736;
-    font-size: 16px;
-    text-align: center;
-    line-height: 2;
-    letter-spacing: 1px;
-  }
-
-  ul { margin: 0 auto; padding: 0; margin: 0; display: flex; }
-li { margin: 0 auto; list-style-type: none; padding: 8px; }
+  font-size: 30px;
   
+  }
+td,th {
+  color:#dba736;
+  font-size: 16px;
+  text-align: center;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+
 html {
-  font-family: 'Arial', sans-serif;
-  font-size: 25px;
+font-family: 'Arial', sans-serif;
+font-size: 25px;
 }
 
 .tooltip {
-  margin: 0;
-  position: absolute;
-  color:white;
-  padding: 15px;
-    font-size: 14px;
-  border-radius: 4px;
-  font-style: normal;
-  text-align: center;
-  font-family: "Exocet Blizzard";
-  background-color: rgba(100, 100, 100, 0.5);
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+margin: 0;
+position: absolute;
+color:white;
+padding: 15px;
+  font-size: 14px;
+border-radius: 4px;
+font-style: normal;
+text-align: center;
+font-family: "Exocet Blizzard";
+background-color: rgba(100, 100, 100, 0.5);
+box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
 }
 
 body {
-  border: 1px solid black;
-  margin:0;
-  padding: 8px;
-  background-color: rgba(100, 100, 100, 0.5);
-  background: url('../images/back.jpg');
-  background-size: cover;
-  background-attachment: fixed;
-  }
+border: 1px solid black;
+margin:0;
+padding: 8px;
+background: url('../images/back.jpg');
+background-size: cover;
+background-attachment: fixed;
+}
 
-  @font-face {
-    font-family: "Exocet Blizzard";
-    src: url('../fonts/exocet-blizzard-medium.eot');
-    src: url('../fonts/exocet-blizzard-medium.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/exocet-blizzard-medium.woff') format('woff'),
-         url('../fonts/exocet-blizzard-medium.ttf') format('truetype'),
-         url('../fonts/exocet-blizzard-medium.svg#svgExocetReaper') format('svg');
-   }
+@font-face {
+  font-family: "Exocet Blizzard";
+  src: url('../fonts/exocet-blizzard-medium.eot');
+  src: url('../fonts/exocet-blizzard-medium.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/exocet-blizzard-medium.woff') format('woff'),
+       url('../fonts/exocet-blizzard-medium.ttf') format('truetype'),
+       url('../fonts/exocet-blizzard-medium.svg#svgExocetReaper') format('svg');
+ }
+
+ html {
+  --color: rgb(231, 169, 36);
+  --white: rgb(255, 255, 255);
+  --black: rgb(35, 35, 35);
+  --darkTransparent: rgba(0, 0, 0, 0.75);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.nav {
+  width: 100%;
+  font-size: 11pt;
+  font-family: "Exocet Blizzard";
+  max-width: 1200px;
+  display: flex;
+  position: relative;
+  height: 46px;
+  margin: 0 auto;
+  justify-content: center;
+}
+.nav ul {
+  list-style: none;
+}
+.nav a {
+  text-decoration: none;
+}
+.visible-menu {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 60px);
+  max-height: 46px;
+  overflow: hidden;
+}
+.visible-menu.active {
+  max-height: max-content;
+  overflow: visible;
+}
+.visible-menu a {
+  display: block;
+  padding: 14px 20px;
+  font-size: 16px;
+  color: var(--color);
+  background: var(--darkTransparent);
+}
+.visible-menu a:hover {
+  background: var(--color);
+  color: var(--white);
+}
+.burger {
+  width: 60px;
+  height: 100%;
+  right: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  background: var(--color);
+  color: var(--white);
+  cursor: pointer;
+}
+.burger svg {
+  transition: 0.4s;
+}
+.burger.active svg {
+  transform: rotate(90deg);
+}
+
+@media only screen and (min-width: 800px) {
+  .visible-menu {
+    flex-direction: row;
+    width: auto;
+  }
+  .visible-menu a {
+    background: transparent;
+  }
+  .burger {
+    display: none;
+  }
+}

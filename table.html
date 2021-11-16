@@ -6,23 +6,32 @@
     <link rel="icon" type="image/png" href="images/favicon32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="images/favicon96x96.png" sizes="96x96">
     
-    <link href="styles/common.css?version=4" rel="stylesheet" type="text/css">
-    <link href="styles/style.css?version=4" rel="stylesheet" type="text/css">
+    <link href="styles/common.css?version=6" rel="stylesheet" type="text/css">
+    <link href="styles/style.css?version=6" rel="stylesheet" type="text/css">
   </head>
   <body>
+    <nav class="nav"> 
+      <ul class="visible-menu">
+        <li><a href="index.html">Diablorunes.ru</a></li>
+        <li><a href="table.html">Руны</a></li>
+        <li><a href="runeworlds.html">Рунные слова</a></li>
+        <li><a href="istory.html">История</a></li>
+        <li><a href="secrets.html">Секреты</a></li>
+          </ul>
+      <button class= "burger hidden">
+        <svg width ="30" height = "40">
+          <circle cx = "15" cy = "10" r ="2" fill = "rgb(55,55,55)"/>
+          <circle cx = "15" cy = "20" r ="2" fill = "rgb(55,55,55)"/>
+          <circle cx = "15" cy = "30" r ="2" fill = "rgb(55,55,55)"/>
+        </svg>
+        <div class ="burger-count"></div>
+      </button>
+      <ul class = "hidden-menu"></ul>
+    </nav>
     
     <h1>Руны Diablo 2 Lord of destraction</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Главная рума</a></li>
-          <li><a href="table.html">Список рун</a></li>
-          <li><a href="runeworlds.html">Список основных рунных слов</a></li>
-        </ul>
-        
-        
-       
-            <table border="1" cellpadding="0" cellspacing="0" bordercolor="#825018">
-              <tbody>
+    <table border="1" cellpadding="0" cellspacing="0" bordercolor="#825018">
+              <tbody id="runeListHeader">
                 <td colspan="5" rowspan="1" style="background:#332220;">Список рун</td>
                 <tr>
                   <td style="background:#252523;" width="50px"><b>Вид</b></p></td>
@@ -32,236 +41,13 @@
                   <td style="background:#252523;"><b>Уровень</b></td>
                 </tr>
                 <tr>
-                  <td ><img src="images/El.gif" class="rune" alt="<p>El</p>" data-tooltip="</br>Weapon:</br>+50 To Attack Rating, +1 Light Radius</br>Доспехи:</br>+15 Defense, +1 To Light Radius</br>Level:11"/></td>
-                  <td>El</td>
-                  <td>+50 To Attack Rating, +1 Light Radius</td>
-                  <td>+15 Defense, +1 To Light Radius</td>
-                  <td>11</td>
-                </tr>
-                <tr>
-                  <td><img src="images/Eld.gif" class="rune" alt="<p>Eld</p>" data-tooltip="</br>Weapon:</br>+75% Damage To Undead,</br> +50 Attack Rating Against Undead</br>Armor:</br>15% Slower Stamina Drain/7%</br> Increased Chance of Blocking (Shields)</br>Rec Level 11"/></td>
-                  <td>Eld</td>
-                  <td>+75% Damage To Undead, +50 Attack Rating Against Undead</td>
-                  <td>15% Slower Stamina Drain/7% Increased Chance of Blocking (Shields)</td>
-                  <td>11</td>
-                </tr>
-                <tr>
-                  <td><img src="images/Tir.gif" class="rune" alt="<p>Tir</p>" data-tooltip="</br>Weapon:</br>+2 To Mana After Each Kill</br>Armor:</br>+2 To Mana After Each Kill</br>Rec Level 13"/></td>
-                  <td>Tir</td>
-                  <td>+2 To Mana After Each Kill</td>
-                  <td>+2 To Mana After Each Kill</td>
-                  <td>13</td>
-                </tr>
-                <tr>
-                  <td><img src="images/Nef.gif" class="rune" alt="<p>Nef</p>" data-tooltip="</br>Weapon:</br>Knockback</br>Armor:</br>+30 Defense Vs. Missile</br>Rec Level 13"/></td>
-                  <td>Nef</td>
-                  <td>Knockback</td>
-                  <td>+30 Defense Vs. Missile</td>
-                  <td>13</td>
-                </tr>
-                <tr>
-                  <td><img src="images/Eth.gif" class="rune" alt="<p>Eth</p>"data-tooltip="</br>Weapon:</br>-25% To Target Defense</br>Armor:</br><Regenerate Mana 15%/br>Rec Level: 15"/></td>
-                  <td>Eth</td>
-                  <td>-25% To Target Defense</td>
-                  <td>Regenerate Mana 15%</td>
-                  <td>15</td>
-                </tr>
-                <tr>
-                  <td><img src="images/Ith.gif" class="rune" alt="<p>Ith</p>"data-tooltip="</br>Weapon:</br>+9 To Maximum Damage</br>Armor:</br>15% Damage Taken Goes to Mana</br>Rec Level:15"/></td>
-                  <td>Ith</td>
-                  <td>+9 To Maximum Damage</td>
-                  <td>15% Damage Taken Goes to Mana</td>
-                  <td>15</td>
-                </tr>
-                <tr>
-                  <td><img src="images/Tal.gif" class="rune" alt="<p>Tal</p>"data-tooltip="</br>Weapon:</br>+75 Poison Damage Over 5 Seconds</br>Armor:</br>Poison Resist 30%</br>Poison Resist 35% (Shields)</br>Rec Level:17"/></td>
-                  <td>Tal</td>
-                  <td>+75 Poison Damage Over 5 Seconds</td>
-                  <td>Poison Resist 30%/Poison Resist 35% (Shields)</td>
-                  <td>17</td>
-                </tr>
-                <tr>
-                  <td><img src="images/Ral.gif" class="rune" alt="<p>Ral</p>"data-tooltip="</br>Weapon:</br>Adds 5-30 Fire Damage</br>Armor:</br>Fire Resist 30%</br>Fire Resist 35% (Shields)</br>Rec Level:19"/></td>
-                  <td>Ral</td>
-                  <td>Adds 5-30 Fire Damage</td>
-                  <td>Fire Resist 30%/Fire Resist 35% (Shields)</td>
-                  <td>19</td>
-                </tr>
-                <tr>
-                  <td><img src="images/Ort.gif" class="rune" alt="<p>Ort</p>"data-tooltip="</br>Weapon:</br>Adds 1-50 Lightning Damage</br>Armor:</br>Lightning Resist 30%</br>Lightning Resist 35% (Shields)</br>Rec Level:21"/></td>
-                  <td>Ort</td>
-                  <td>Adds 1-50 Lightning Damage</td>
-                  <td>Lightning Resist 30%/Lightning Resist 35% (Shields)</td>
-                  <td>21</td>
-                </tr>
-                <tr>
-                  <td><img src="images/Thul.gif" class="rune" alt="<p>Thul</p>"data-tooltip="</br>Weapon:</br>Adds 3-14 Cold Damage - 3 Second Duration</br>Armor:</br>Cold Resist 30%/Cold Resist 35% (Shields)</br>Rec Level:23"/></td>
-                  <td>Thul</td>
-                  <td>Adds 3-14 Cold Damage - 3 Second Duration</td>
-                  <td>Cold Resist 30%/Cold Resist 35% (Shields)</td>
-                  <td>23</td>
-                </tr>
-                <tr>
-                  <td><img src="images/Amn.gif" class="rune" alt="<p>Amn</p>"data-tooltip="</br>Weapon:</br>7% Life Stolen Per Hit</br>Armor:</br>Attacker Takes Damage of 14</br>Rec Level:25"/></td>
-                  <td>Amn</td>
-                  <td>7% Life Stolen Per Hit</td>
-                  <td>Attacker Takes Damage of 14</td>
-                  <td>25</td>
-                </tr>
-                <tr>
-                  <td><img src="images/Sol.gif" class="rune" alt="<p>Sol</p>"data-tooltip="</br>Weapon:</br>+9 To Minimum Damage</br>Armor:</br>Damage Reduced By 7</br>Rec Level:27"/></td>
-                  <td>Sol</td>
-                  <td>+9 To Minimum Damage</td>
-                  <td>Damage Reduced By 7</td>
-                  <td>27</td>
-                </tr>
-                <tr>
-                  <td><img src="images/Shael.gif" class="rune" alt="<p>Shael</p>"data-tooltip="</br>Weapon:</br>20% Increased Attack Speed</br>Armor:</br>20% Faster Hit Recovery</br>20% Faster Block Rate (Shields)</br>Rec Level:29"/></td>
-                  <td>Shael</td>
-                  <td>20% Increased Attack Speed</td>
-                  <td>20% Faster Hit Recovery/20% Faster Block Rate (Shields)</td>
-                  <td>29</td>
-                </tr>
-                <tr>
-                  <td><img src="images/Dol.gif" class="rune" alt="<p>Dol</p>"data-tooltip="</br>Weapon:</br>Hit Causes Monster To Flee 25%</br>Armor:</br>Replenish Life +7</br>Rec Level:31"/></td>
-                  <td>Dol</td>
-                  <td>Hit Causes Monster To Flee 25%</td>
-                  <td>Replenish Life +7</td>
-                  <td>31</td>
-                </tr>
-                <tr>
-                  <td><img src="images/Hel.gif" class="rune" alt="<p>Hel</p>"data-tooltip="</br>Weapon:</br>Requirements -20%</br>Armor:</br>Requirements -15%</br>Rec Level:33"/></td>
-                  <td>Hel</td>
-                  <td>Requirements -20%</td>
-                  <td>Requirements -15%</td>
-                  <td>33</td>
-                </tr>
-                <tr>
-                  <td><img src="images/Io.gif" class="rune" alt="<p>Io</p>"data-tooltip="</br>Weapon:</br>+10 To Vitality</br>Armor:</br>+10 To Vitality</br>Rec Level:35"/></td>
-                  <td>Io</td>
-                  <td>+10 To Vitality</td>
-                  <td>+10 To Vitality</td>
-                  <td>35</td>
-                </tr>
-                <tr>
-                  <td><img src="images/Lum.gif" class="rune" alt="<p>Lum</p>"data-tooltip="</br>Weapon:</br>+10 To Energy</br>Armor:</br>+10 To Energy</br>Rec Level:37"/></td>
-                  <td>Lum</td>
-                  <td>+10 To Energy</td>
-                  <td>+10 To Energy</td>
-                  <td>37</td>
-                </tr>
-                <tr>
-                  <td><img src="images/Ko.gif" class="rune" alt="<p>Ko</p>"data-tooltip="</br>Weapon:</br>+10 To Dexterity</br>Armor:</br>+10 To Dexterity</br>Rec Level:39"/></td>
-                  <td>Ko</td>
-                  <td>+10 To Dexterity</td>
-                  <td>+10 To Dexterity</td>
-                  <td>39</td>
-                </tr>
-                <tr>
-                  <td><img src="images/Fal.gif" class="rune" alt="<p>Fal</p>"data-tooltip="</br>Weapon:</br>+10 To Strength</br>Armor:</br>+10 To Strength</br>Rec Level:41"/></td>
-                  <td>Fal</td>
-                  <td>+10 To Strength</td>
-                  <td>+10 To Strength</td>
-                  <td>41</td>
-                </tr>
-                <tr>
-                  <td><img src="images/Lem.gif" class="rune" alt="<p>Lem</p>"data-tooltip="</br>Weapon:</br>75% Extra Gold From Monsters</br>Armor:</br>50% Extra Gold From Monsters</br>Rec Level:43"/></td>
-                  <td>Lem</td>
-                  <td>75% Extra Gold From Monsters</td>
-                  <td>50% Extra Gold From Monsters</td>
-                  <td>43</td>
-                </tr>
-                <tr>
-                  <td><img src="images/Pul.gif" class="rune" alt="<p>Pul</p>"data-tooltip="</br>Weapon:</br>+75% Damage To Demons,</br> +100 Attack Rating Against Demons</br>Armor:</br>+30% Enhanced Defense</br>Rec Level:45"/></td>
-                  <td>Pul</td>
-                  <td>+75% Damage To Demons, +100 Attack Rating Against Demons</td>
-                  <td>+30% Enhanced Defense</td>
-                  <td>45</td>
-                </tr>
-                <tr>
-                  <td><img src="images/Um.gif" class="rune" alt="<p>Um</p>"data-tooltip="</br>Weapon:</br>25% Chance of Open Wounds</br>Armor:</br>All Resistances +15 (Armor/Helms) +22 (Shields</br>Rec Level:47"/></td>
-                  <td>Um</td>
-                  <td>25% Chance of Open Wounds</td>
-                  <td>All Resistances +15 (Armor/Helms) +22 (Shields)</td>
-                  <td>47</td>
-                </tr>
-                <tr>
-                  <td><img src="images/Mal.gif" class="rune" alt="<p>Mal</p>"data-tooltip="</br>Weapon:</br>Prevent Monster Heal</br>Armor:</br>Magic Damage Reduced By 7</br>Rec Level:49"/></td>
-                  <td>Mal</td>
-                  <td>Prevent Monster Heal</td>
-                  <td>Magic Damage Reduced By 7</td>
-                  <td>49</td>
-                </tr>
-                <tr>
-                  <td><img src="images/Ist.gif" class="rune" alt="<p>Ist</p>"data-tooltip="</br>Weapon:</br>30% Better Chance of Getting Magic Items</br>Armor:</br>25% Better Chance of Getting Magic Items</br>Rec Level:51"/></td>
-                  <td>Ist</td>
-                  <td>30% Better Chance of Getting Magic Items</td>
-                  <td>25% Better Chance of Getting Magic Items</td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td><img src="images/Gul.gif" class="rune" alt="<p>Gul</p>"data-tooltip="</br>Weapon:</br>20% Bonus To Attack Rating</br>Armor:</br>5% To Maximum Poison Resist</br>Rec Level:53"/></td>
-                  <td>Gul</td>
-                  <td>20% Bonus To Attack Rating</td>
-                  <td>5% To Maximum Poison Resist</td>
-                  <td>53</td>
-                </tr>
-                <tr>
-                  <td><img src="images/Vex.gif" class="rune" alt="<p>Vex</p>"data-tooltip="</br>Weapon:</br>7% Mana Stolen Per Hit</br>Armor:</br>5% To Maximum Fire Resist</br>Rec Level:55"/></td>
-                  <td>Vex</td>
-                  <td>7% Mana Stolen Per Hit</td>
-                  <td>5% To Maximum Fire Resist</td>
-                  <td>55</td>
-                </tr>
-                <tr>
-                  <td><img src="images/Ohm.gif" class="rune" alt="<p>Ohm</p>"data-tooltip="</br>Weapon:</br>+50% Enhanced Damage</br>Armor:</br>5% To Maximum Cold Resist</br>Rec Level:57"/></td>
-                  <td>Ohm</td>
-                  <td>+50% Enhanced Damage</td>
-                  <td>5% To Maximum Cold Resist</td>
-                  <td>57</td>
-                </tr>
-                <tr>
-                  <td><img src="images/Lo.gif" class="rune" alt="<p>Lo</p>"data-tooltip="</br>Weapon:</br>20% Deadly Strike</br>Armor:</br>5% To Maximum Lightning Resist</br>Rec Level:59"/></td>
-                  <td>Lo</td>
-                  <td>20% Deadly Strike</td>
-                  <td>5% To Maximum Lightning Resist</td>
-                  <td>59</td>
-                </tr>
-                <tr>
-                  <td><img src="images/Sur.gif" class="rune" alt="<p>Sur</p>"data-tooltip="</br>Weapon:</br>Hit Blinds Target</br>Armor:</br>Maximum Mana 5%/+50 To Mana (Shields)</br>Rec Level:61"/></td>
-                  <td>Sur</td>
-                  <td>Hit Blinds Target</td>
-                  <td>Maximum Mana 5%/+50 To Mana (Shields)</td>
-                  <td>61</td>
-                </tr>
-                <tr>
-                  <td><img src="images/Ber.gif" class="rune" alt="<p>Ber</p>"data-tooltip="</br>Weapon:</br>20% Chance of Crushing Blow</br>Armor:</br>Damage Reduced by 8%</br>Rec Level:63"/></td>
-                  <td>Ber</td>
-                  <td>20% Chance of Crushing Blow</td>
-                  <td>Damage Reduced by 8%</td>
-                  <td>63</td>
-                </tr>
-                <tr>
-                  <td><img src="images/Jah.gif" class="rune" alt="<p>Jah</p>"data-tooltip="</br>Weapon:</br>Ignore Target's Defense</br>Armor:</br>Increase Maximum Life 5%/+50 Life (Shields)</br>Rec Level:65"/></td>
-                  <td>Jah</td>
-                  <td>Ignore Target's Defense</td>
-                  <td>Increase Maximum Life 5%/+50 Life (Shields)</td>
-                  <td>65</td>
-                </tr>
-                <tr>
-                  <td><img src="images/Cham.gif" class="rune" alt="<p>Cham</p>"data-tooltip="</br>Weapon:</br>Freeze Target +3</br>Armor:</br>Cannot Be Frozen</br>Rec Level:67"/></td>
-                  <td>Cham</td>
-                  <td>Freeze Target +3</td>
-                  <td>Cannot Be Frozen</td>
-                  <td>67</td>
-                </tr>
-                <tr>
-                  <td><img src="images/Zod.gif" class="rune" alt="Zod"data-tooltip="</br>Weapon:</br>Indestructible</br>Armor:</br>Indestructible</br>Rec Level:69"/></td>
-                  <td>Zod</td>
-                  <td>Indestructible</td>
+                  <td><img src="images/Zod.gif" class="rune" alt="Zod" data-tooltip="1"/></td>
+                  <td><img src="images/el.gif" class="rune" alt="el"/></td>
+                  <td><img src="images/Hel.gif" class="rune" alt="Hel"/></td>
                   <td>Indestructible</td>
                   <td>69</td>
                 </tr>
+                
               </tbody>
             </table>
 
@@ -270,6 +56,7 @@
 <footer>
   <p>©2021 Авторские права принадлежат <strong>Blizzard Entertainment</strong>> Великих создателей легенд и историй </p>
 </footer>
-<script src="script.js?version=4"></script>
+<script src="script.js?version=11"></script>
+<script src="scriptmenu.js?version=11"></script>
 </body>
 </html>

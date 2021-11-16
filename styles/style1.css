@@ -1,63 +1,90 @@
 table {
     margin: 0 auto;
-    table-layout: fixed;
-    
+    width: auto;
 }
-.containers {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  
-}
+.tooltip {
+  margin: 0;
+  position: absolute;
+  color:white;
+  padding: 15px;
+    font-size: 14px;
+  border-radius: 4px;
+  font-style: normal;
+  text-align: center;
+  font-family: "Exocet Blizzard";
+  background-color: rgba(100, 100, 100, 0.5);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+  }
 
-.textform {
-  border: 1px solid #f1bc28;
-  border-radius: 15px;
-  margin: 1% 1% 1% 1%;
-  padding: 1% 1% 1% 1%;
-  margin-left: 5px;
-  margin-right: 5px;
-  background-color: rgba(0, 0, 0, 0.7);
-  
-  box-sizing: border-box;
-    color:#f1bc28;
-    font-size: 16px;
-    text-align: center;
-    line-height: 2;
+  .div {
+    margin: 0;
+    padding-bottom: 0;
     letter-spacing: 1px;
-    text-shadow: 2px 2px 1px rgb(0, 0, 0);
-
+    color:#dba736;
+    font-family: "Exocet Blizzard";
+    font-size: 30px;
+    
+    }
+.demoWrap {
+      margin: 0 auto;
+      
+      display: flex;
+      flex-direction: row;
+      
+    }
+.demoInput {
+      border: 1px solid #f1bc28;
+      border-radius: 15px;
+      margin: 1% 1% 1% 1%;
+      padding: 1% 1% 1% 1%;
+      margin-left: 5px;
+      margin-right: 5px;
+      background-color: rgba(0, 0, 0, 0.7);
+      
+      box-sizing: border-box;
+        color:#f1bc28;
+        font-size: 16px;
+        text-align: center;
+        line-height: 2;
+        letter-spacing: 1px;
+        text-shadow: 2px 2px 1px rgb(0, 0, 0);
+        max-width: 40%;
+        min-height: 500px;
+      min-width: 40%;
+}
+    
+.demoStones {
+      min-height: 500px;
+      background-color: rgba(0, 0, 0, 0.7);
+      border: 1px solid #f1bc28;
+      border-radius: 15px;
+      margin: 1% 1% 1% 1%;
+      margin-left: 5px;
+      margin-right: 5px;
+      padding: 1% 1% 1% 1%;
+      box-sizing: border-box;
+      flex-grow: 1;
 }
 
-.imageform {
-  background-color: rgba(0, 0, 0, 0.7);
-  border: 1px solid #f1bc28;
-  border-radius: 15px;
-  margin: 1% 1% 1% 1%;
-  margin-left: 5px;
-  margin-right: 5px;
-  padding: 1% 1% 1% 1%;
-  box-sizing: border-box;
-  max-width: 30%;
-  min-width: 30%;
-  float: right;
+.gemsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 56px);
+  grid-template-rows: repeat(auto-fill, 56px);
+  min-height: 400px;
 }
-
-
-
-.image1 {
-  margin: 0 auto;
-  max-width: 100%;
-  display: block;
-  float: right;
+.gemItem {
+  background-size: 100% 100%;
+  width: 56px;
+  height: 56px;
+  cursor: grab;
 }
+    
 
 td {
     word-wrap:break-word;
 }
 
   h1  {
-    
     font-family: "Exocet Blizzard";
     font-size: 30px;
     text-align: center;
@@ -84,7 +111,7 @@ td {
     text-shadow: 3px 3px 1px black;
   }
   
-p { 
+p {
     color:#f1bc28;
     font-size: 16px;
     text-align: center;
@@ -99,12 +126,9 @@ html {
   font-size: 16px;
 }
 body {
-  border: 1px solid #f1bc28;
-  border-radius: 15px;
-  margin: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 5px;
-  padding-left: 5px;
+  border: 1px solid black;
+  margin:0;
+  padding: 8px;
   background: url('../images/back.jpg');
   background-size: cover;
   background-attachment: fixed;
@@ -219,4 +243,58 @@ body {
   height: 40px;
   width: 0%;
   background-color: blue;
+}
+
+.slotItem {
+  background-size: 100% 100%;
+  margin: 36px  auto;
+}
+.slotItem__weapon, .slotItem__shield {
+  width: 140px;
+  height: 240px;
+  display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+}
+.slotItem__armor {
+  width: 140px;
+  height: 240px;
+  display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+}
+.slotItem__helmet {
+  width: 140px;
+  height: 140px;
+  display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+}
+
+.modal-root {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.modal-overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+}
+.modal-content {
+  padding: 20px;
+  background: #000;
+  color: #fff;
+  flex-grow: 0;
+  position: relative;
+  z-index: 1;
 }

@@ -1,116 +1,50 @@
 table {
     margin: 0 auto;
-    table-layout: fixed;
-    
+    width:70%;
 }
-.containers {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  
-}
-
-.textform {
-  border: 1px solid #f1bc28;
-  border-radius: 15px;
-  margin: 1% 1% 1% 1%;
-  padding: 1% 1% 1% 1%;
-  margin-left: 5px;
-  margin-right: 5px;
-  background-color: rgba(0, 0, 0, 0.7);
-  
-  box-sizing: border-box;
-    color:#f1bc28;
-    font-size: 16px;
-    text-align: center;
-    line-height: 2;
-    letter-spacing: 1px;
-    text-shadow: 2px 2px 1px rgb(0, 0, 0);
-
-}
-
-.imageform {
-  background-color: rgba(0, 0, 0, 0.7);
-  border: 1px solid #f1bc28;
-  border-radius: 15px;
-  margin: 1% 1% 1% 1%;
-  margin-left: 5px;
-  margin-right: 5px;
-  padding: 1% 1% 1% 1%;
-  box-sizing: border-box;
-  max-width: 30%;
-  min-width: 30%;
-  float: right;
-}
-
-
-
-.image1 {
-  margin: 0 auto;
-  max-width: 100%;
-  display: block;
-  float: right;
-}
-
 td {
     word-wrap:break-word;
 }
+html {
+    font-size: 25px; /* px значит 'пиксели': базовый шрифт будет 10 пикселей в высоту  */
+    font-family: 'Arial', sans-serif;
+  }
+  h1 {
+    font-family: "Exocet Blizzard";
+    font-size: 36px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    color: #f1bc28;
+    text-shadow: 3px 3px 1px black;
+  }
 
-  h1  {
-    
+footer {
     font-family: "Exocet Blizzard";
-    font-size: 30px;
-    text-align: center;
-    margin: 0;
-    padding: 20px 0;
-    color: #f1bc28;
-    text-shadow: 3px 3px 1px black;
-  }
-  h2
-  { font-family: "Exocet Blizzard";
     font-size: 20px;
-    text-align: center;
     margin: 0;
     padding: 20px 0;
     color: #f1bc28;
     text-shadow: 3px 3px 1px black;
   }
- footer {
-    font-family: "Exocet Blizzard";
-    font-size: 11px;
-    margin: 0;
-    padding: 20px 0;
-    color: #f1bc28;
-    text-shadow: 3px 3px 1px black;
-  }
-  
-p { 
-    color:#f1bc28;
+td  {
+    color:#dba736;
     font-size: 16px;
     text-align: center;
     line-height: 2;
     letter-spacing: 1px;
-    text-shadow: 2px 2px 1px rgb(0, 0, 0);
   }
 
-
-html {
-  font-family: 'Arial', sans-serif;
-  font-size: 16px;
-}
 body {
-  border: 1px solid #f1bc28;
-  border-radius: 15px;
-  margin: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 5px;
-  padding-left: 5px;
+  border: 1px solid black;
+  margin:0;
+  padding: 8px;
   background: url('../images/back.jpg');
   background-size: cover;
   background-attachment: fixed;
   }
 
-  @font-face {
+   @font-face {
     font-family: "Exocet Blizzard";
     src: url('../fonts/exocet-blizzard-medium.eot');
     src: url('../fonts/exocet-blizzard-medium.eot?#iefix') format('embedded-opentype'),
@@ -118,6 +52,7 @@ body {
          url('../fonts/exocet-blizzard-medium.ttf') format('truetype'),
          url('../fonts/exocet-blizzard-medium.svg#svgExocetReaper') format('svg');
    }
+   
    html {
     --color: rgb(231, 169, 36);
     --white: rgb(255, 255, 255);
@@ -199,24 +134,3 @@ body {
     }
   }
   
-.imgSet{
-  display: flex;
-  border: 2px solid var(--color);
-  margin: 0 auto;
-}
-
-.item img {
-    width: 100%;
-    height: auto;
-    }
-
-    .container {
-      display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-    }
-#progressBar {
-  height: 40px;
-  width: 0%;
-  background-color: blue;
-}
