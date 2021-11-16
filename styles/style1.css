@@ -78,6 +78,17 @@ table {
   height: 56px;
   cursor: grab;
 }
+.slotContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 124px);
+  grid-template-rows: repeat(auto-fill, 236px);
+  max-width: 1200px;
+}
+.weaponItem {
+  width: 124px;
+  height: 236px;
+  background-size: cover;
+}
     
 
 td {
@@ -297,4 +308,9 @@ body {
   flex-grow: 0;
   position: relative;
   z-index: 1;
+}
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
 }

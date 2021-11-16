@@ -693,20 +693,20 @@ const gems = [
     
 ]
 const weaponTypes = [
-  { id: 001,
+  { id: 1,
     name: "Broadsword",
     img: "images/weapons/broadsword.gif"
   },
-  { id: 002,
+  { id: 2,
     name: "crystalsword.gif",
     img: "images/weapons/crystalsword.gif"
   }
   ,
-  { id: 003,
+  { id: 3,
     name: "Flamberge",
     img: "images/weapons/flamberge.gif"
   },
-  { id: 004,
+  { id: 4,
     name: "Shortsword",
     img: "images/weapons/shortsword.gif"
   }
@@ -777,14 +777,21 @@ function initRunes() {
     })
 
 }
-function initweaponTypes() {
+function initWeaponTypes(rootEl, closeModal) {
   weaponTypes.forEach(({ id, name, img }) => {
       const itemEl = document.createElement("div");
       itemEl.style.backgroundImage = `url(${img})`;
-      itemEl.title = [ name].join(' ');
+      itemEl.title = name;
       itemEl.dataset.id = id;
-      itemEl.classList.add("modal-content")
-      modalContent.append(itemEl);
+      itemEl.classList.add("weaponItem");
+      itemEl.addEventListener('click', () => {
+        const slot = document.querySelector('.slotItem');
+        Array.from(slot.childNodes).map(x => x.remove())
+        const selectedItemEl = itemEl.cloneNode();
+        slot.appendChild(selectedItemEl);
+        closeModal();
+      })
+      rootEl.append(itemEl);
   })
 
 }
@@ -810,14 +817,19 @@ opener.addEventListener("click", () => {
   modalContent.classList.add("modal-content");
   modal.appendChild(modalContent);
   const closeButton = document.createElement("button");
+  closeButton.classList.add("modal-close");
   closeButton.innerText = "Close";
   modalContent.appendChild(closeButton);
-  // TODO добавить остальные элементы в modalContent
+  //добавляем остальные элементы в modalContent
+  const slotsContainer =  document.createElement("div");
+  slotsContainer.classList.add("slotContainer");
+  modalContent.appendChild(slotsContainer);
   modal.appendChild(modalContent);
   const closeModal = () => {
     modal.remove();
     open = false;
   };
+  initWeaponTypes(slotsContainer, closeModal);
   modalOverlay.addEventListener("click", closeModal);
   closeButton.addEventListener("click", closeModal);
   document.body.appendChild(modal);
