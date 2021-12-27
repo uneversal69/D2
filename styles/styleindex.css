@@ -11,8 +11,7 @@ table {
 }
 
 .textform {
-  border: 1px solid #f1bc28;
-  border-radius: 15px;
+  border: 1px solid #eee;
   margin: 1% 1% 1% 1%;
   padding: 1% 1% 1% 1%;
   margin-left: 5px;
@@ -20,7 +19,6 @@ table {
   background-color: rgba(0, 0, 0, 0.7);
   
   box-sizing: border-box;
-    color:#f1bc28;
     font-size: 16px;
     text-align: center;
     line-height: 2;
@@ -31,8 +29,7 @@ table {
 
 .imageform {
   background-color: rgba(0, 0, 0, 0.7);
-  border: 1px solid #f1bc28;
-  border-radius: 15px;
+  border: 1px solid #eee;
   margin: 1% 1% 1% 1%;
   margin-left: 5px;
   margin-right: 5px;
@@ -43,27 +40,16 @@ table {
   float: right;
 }
 
-
-
-.image1 {
-  margin: 0 auto;
-  max-width: 100%;
-  display: block;
-  float: right;
-}
-
 td {
     word-wrap:break-word;
 }
 
   h1  {
-    
     font-family: "Exocet Blizzard";
     font-size: 30px;
     text-align: center;
     margin: 0;
     padding: 20px 0;
-    color: #f1bc28;
     text-shadow: 3px 3px 1px black;
   }
   h2
@@ -72,7 +58,6 @@ td {
     text-align: center;
     margin: 0;
     padding: 20px 0;
-    color: #f1bc28;
     text-shadow: 3px 3px 1px black;
   }
  footer {
@@ -80,34 +65,7 @@ td {
     font-size: 11px;
     margin: 0;
     padding: 20px 0;
-    color: #f1bc28;
     text-shadow: 3px 3px 1px black;
-  }
-  
-p { 
-    color:#f1bc28;
-    font-size: 16px;
-    text-align: center;
-    line-height: 2;
-    letter-spacing: 1px;
-    text-shadow: 2px 2px 1px rgb(0, 0, 0);
-  }
-
-
-html {
-  font-family: 'Arial', sans-serif;
-  font-size: 16px;
-}
-body {
-  border: 1px solid #f1bc28;
-  border-radius: 15px;
-  margin: 10px 10px 10px 10px;
-  padding: 5px;
-  padding-right: 5px;
-  padding-left: 5px;
-  background: url('../images/back.jpg');
-  background-size: cover;
-  background-attachment: fixed;
   }
 
   @font-face {
@@ -222,8 +180,7 @@ body {
 }
 
 .windowscreen {
-  border: 1px solid #f1bc28;
-  border-radius: 15px;
+  border: 1px solid #eee;
   margin: 10px 10px 10px 10px;
   padding: 5px;
   padding-right: 5px;
@@ -231,5 +188,40 @@ body {
 
 }
 .videoclass {
-  border: 1px solid #f1bc28;
+  margin: 0 auto;
+  max-width: 100%;
+  display: block;
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.md-6 {
+  min-width: 100%;
+  width: 100%;
+}
+.md-auto {
+  min-width: 100%;
+  width: 100%;
+}
+.md {
+  flex-grow: 1;
+  min-width: 100%;
+  width: 100%;
+}
+@media only screen and (min-width: 800px) {
+  .md-6 {
+    min-width: 50%;
+    width: 50%;
+  }
+  .md {
+    flex-grow: 1;
+    min-width: auto;
+    width: auto;
+  }
+  .md-auto {
+    min-width: auto;
+    width: auto;
+  }
 }

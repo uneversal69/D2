@@ -4,6 +4,7 @@ table {
 }
 td {
   word-wrap:break-word;
+  border: 1px solid #999;
 }
 
 h1 {
@@ -13,7 +14,6 @@ h1 {
   text-align: center;
   margin: 0;
   padding: 20px 0;
-  color: #f1bc28;
   text-shadow: 3px 3px 1px black;
 }
 footer {
@@ -21,29 +21,17 @@ footer {
   font-size: 20px;
   margin: 0;
   padding: 20px 0;
-  color: #f1bc28;
   text-shadow: 3px 3px 1px black;
-}
-p {
-margin: 0;
-padding-bottom: 0;
-letter-spacing: 1px;
-color:#dba736;
-font-family: "Exocet Blizzard";
-font-size: 20px;
-
 }
 .div {
   margin: 0;
   padding-bottom: 0;
   letter-spacing: 1px;
-  color:#dba736;
   font-family: "Exocet Blizzard";
   font-size: 30px;
   
   }
 td,th {
-  color:#dba736;
   font-size: 16px;
   text-align: center;
   line-height: 2;

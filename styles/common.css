@@ -1,5 +1,43 @@
 /* это общий файл стилей для всех страниц */
+html {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+}
+body {
+  margin: 10px 10px 10px 10px;
+  padding: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+  background: url("../images/back.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: rgb(231, 169, 36);
+}
+
 a {
   color: #f1bc28;
   text-decoration: underline;
+}
+.music {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  margin: 10.5px;
+  opacity: 0.5;
+}
+.music--active {
+  opacity: 1;
+}
+
+.textContainer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+p {
+  font-size: 16px;
+  text-align: center;
+  line-height: 2;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 1px rgb(0, 0, 0);
 }

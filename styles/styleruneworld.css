@@ -9,38 +9,16 @@ h1 {
   text-align: center;
   margin: 0;
   padding: 20px 0;
-  color: #f1bc28;
   text-shadow: 3px 3px 1px black;
 }
-footer {
-  font-family: "Exocet Blizzard";
-  font-size: 20px;
-  margin: 0;
-  padding: 20px 0;
-  color: #f1bc28;
-  text-shadow: 3px 3px 1px black;
-}
+
 .namerune {
 margin: 0;
 padding-bottom: 0;
 letter-spacing: 1px;
-color:#dba736;
 font-family: "Exocet Blizzard";
 font-size: 20px;
 
-}
-td,th {
-  color:#dba736;
-  font-size: 16px;
-  text-align: center;
-  line-height: 2;
-  letter-spacing: 1px;
-}
-
-
-html {
-font-family: 'Arial', sans-serif;
-font-size: 25px;
 }
 
 .tooltip {
@@ -65,19 +43,8 @@ background: url('../images/back.jpg');
 background-size: cover;
 background-attachment: fixed;
 }
-p {
-margin: 0;
-padding-bottom: 0;
-letter-spacing: 1px;
-color:#dba736;
-font-family: 'Arial', sans-serif;
-font-size: 20px;
-
-}
-
   
 td,th {
-  color:#dba736;
   font-size: 16px;
   text-align: center;
   line-height: 2;
@@ -103,13 +70,12 @@ font-family: "Exocet Blizzard";
 background-color: rgba(100, 100, 100, 0.7);
 box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
 }
-body {
-  border: 1px solid black;
-  margin:0;
-  padding: 8px;
-  background: url('../images/back.jpg');
-  background-size: cover;
-  background-attachment: fixed;
+  footer {
+    font-family: "Exocet Blizzard";
+    font-size: 20px;
+    margin: 0;
+    padding: 20px 0;
+    text-shadow: 3px 3px 1px black;
   }
 
    @font-face {
