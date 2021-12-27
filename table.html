@@ -6,10 +6,11 @@
     <link rel="icon" type="image/png" href="images/favicon32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="images/favicon96x96.png" sizes="96x96">
     
-    <link href="styles/common.css?version=6" rel="stylesheet" type="text/css">
-    <link href="styles/style.css?version=6" rel="stylesheet" type="text/css">
+    <link href="styles/common.css?version=8" rel="stylesheet" type="text/css">
+    <link href="styles/style.css?version=8" rel="stylesheet" type="text/css">
   </head>
   <body>
+    <audio src="Diablo2sound.mp3" autoplay="autoplay"></audio>
     <nav class="nav"> 
       <ul class="visible-menu">
         <li><a href="index.html">Diablorunes.ru</a></li>
@@ -41,11 +42,11 @@
                   <td style="background:#252523;"><b>Уровень</b></td>
                 </tr>
                 <tr>
-                  <td><img src="images/Zod.gif" class="rune" alt="Zod" data-tooltip="1"/></td>
-                  <td><img src="images/el.gif" class="rune" alt="el"/></td>
-                  <td><img src="images/Hel.gif" class="rune" alt="Hel"/></td>
-                  <td>Indestructible</td>
-                  <td>69</td>
+                  <td><img src="images/Hel.gif"  onclick="soundClick()" class="rune" alt="Hel"/></td>
+                  <td></td>
+                  <td><h1>Press hell</h1></td>
+                  <td><h1>TO Play</h1></td>
+                  <td></td>
                 </tr>
                 
               </tbody>
@@ -58,5 +59,13 @@
 </footer>
 <script src="script.js?version=11"></script>
 <script src="scriptmenu.js?version=11"></script>
+<script>
+  function soundClick() {
+    var audio = new Audio(); // Создаём новый элемент Audio
+    audio.src = 'Diablo2sound.mp3'; // Указываем путь к звуку "клика"
+    audio.autoplay = true; // Автоматически запускаем
+  }
+  soundClick();
+  </script>
 </body>
 </html>
