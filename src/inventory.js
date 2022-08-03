@@ -967,3 +967,5 @@ opener.addEventListener("click", () => {
   closeButton.addEventListener("click", closeModal);
   document.body.appendChild(modal);
 });
+
+console.log('inventory');
