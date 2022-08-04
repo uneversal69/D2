@@ -87,7 +87,7 @@ table {
   width: 130px;
   height: 230px;
   align-items: center;
-  background-size: cover;
+  background-size: contain;
 }
 .slotItem > .weaponItem {
   position: absolute;

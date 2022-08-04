@@ -702,7 +702,7 @@ const weaponTypes = [
   {
     id: 3,
     name: "Flamberge",
-    img: "images/weapons/flamberge.gif",
+    img: "images/weapons/Flamberge.webp",
     maxSockets: 6,
   },
   {
@@ -796,6 +796,7 @@ const armorTypes = [
     maxSockets: 6,
   },
 ];
+// https://diablo-archive.fandom.com/wiki/Category:Diablo_II_Sword_Images
 // Ранее список
 
 const itemSlotAdded = [];
