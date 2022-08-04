@@ -263,7 +263,7 @@ html {
 
 .item img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .container {
@@ -286,24 +286,18 @@ html {
 .slotItem__shield {
   width: 130px;
   height: 230px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  
   
 }
 .slotItem__armor {
-  width: 140px;
-  height: 240px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  width: 130px;
+  height: 230px;
+ 
 }
 .slotItem__helmet {
-  width: 140px;
-  height: 140px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  width: 130px;
+  height: 13px;
+  
 }
 .slotItem--count-1 {
   display: block;
@@ -363,28 +357,28 @@ html {
   position: absolute;
   left: 50%;
   top: 50%;
-  margin-left: -0px;
+  margin-left: -56px;
   margin-top: -56px;
 }
 .slotItem--count-4 div:nth-child(3) {
   position: absolute;
   left: 50%;
   top: 50%;
-  margin-left: -56px;
+  margin-left: 0px;
   margin-top: -56px;
 }
 .slotItem--count-4 div:nth-child(4) {
   position: absolute;
   left: 50%;
   top: 50%;
-  margin-left: 0;
+  margin-left: -56;
   margin-top: 0;
 }
 .slotItem--count-4 div:nth-child(5) {
   position: absolute;
   left: 50%;
   top: 50%;
-  margin-left: -56px;;
+  margin-left: 0px;;
   margin-top: 0;
 }
 .slotItem--count-5 {
@@ -394,37 +388,83 @@ html {
   position: absolute;
   left: 50%;
   top: 50%;
-  margin-left: 0px;
-  margin-top: 40px;
+  margin-left: -56px;
+  margin-top: -86px;
 }
 .slotItem--count-5 div:nth-child(3) {
   position: absolute;
   left: 50%;
   top: 50%;
-  margin-left: -56px;
-  margin-top: 40px;
+  margin-left: 0px;
+  margin-top: -86px;
 }
 .slotItem--count-5 div:nth-child(4) {
   position: absolute;
   left: 50%;
   top: 50%;
-  margin-left: -28;
-  margin-top: -20;
+  margin-left: -28px;
+  margin-top: -28px;
 }
 .slotItem--count-5 div:nth-child(5) {
   position: absolute;
   left: 50%;
   top: 50%;
   margin-left: -56px;;
-  margin-top: -90px;
+  margin-top: 28px;
 }
 .slotItem--count-5 div:nth-child(6) {
   position: absolute;
   left: 50%;
   top: 50%;
   margin-left: 0px;
-  margin-top: -90px;
+  margin-top: 28px;
 }
+.slotItem--count-6 {
+  display: block;
+}
+.slotItem--count-6 div:nth-child(2) {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -56px;
+  margin-top: -86px;
+}
+.slotItem--count-6 div:nth-child(3) {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: 0px;
+  margin-top: -86px;
+}
+.slotItem--count-6 div:nth-child(4) {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -56px;
+  margin-top: -28PX;
+}
+.slotItem--count-6 div:nth-child(5) {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: 0px;;
+  margin-top: -28px;
+}
+.slotItem--count-6 div:nth-child(6) {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -56px;
+  margin-top: 28px;
+}
+.slotItem--count-6 div:nth-child(7) {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: 0px;
+  margin-top: 28px;
+}
+
 .modal-root {
   position: fixed;
   left: 0;

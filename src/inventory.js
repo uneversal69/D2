@@ -717,21 +717,25 @@ const helmetTypes = [
     id: 1,
     name: "Cap",
     img: "images/helms/cap.gif",
+    maxSockets: 2,
   },
   {
     id: 2,
     name: "Helm",
     img: "images/helms/helm.gif",
+    maxSockets: 3,
   },
   {
     id: 3,
     name: "Greathelm",
     img: "images/helms/greathelm.gif",
+    maxSockets: 4,
   },
   {
     id: 4,
     name: "Crown",
     img: "images/helms/crown.gif",
+    maxSockets: 4,
   },
 ];
 const shieldTypes = [
@@ -739,21 +743,25 @@ const shieldTypes = [
     id: 1,
     name: "Buckler",
     img: "images/shields/buckler.gif",
+    maxSockets: 3,
   },
   {
     id: 2,
     name: "smallshield",
     img: "images/shields/smallshield.gif",
+    maxSockets: 3,
   },
   {
     id: 3,
     name: "Kiteshield",
     img: "images/shields/kiteshield.gif",
+    maxSockets: 3,
   },
   {
     id: 4,
     name: "Spikedshield",
     img: "images/shields/spikedshield.gif",
+    maxSockets: 4,
   },
 ];
 const armorTypes = [
@@ -761,26 +769,31 @@ const armorTypes = [
     id: 1,
     name: "ancientarmor",
     img: "images/armor/ancientarmor.gif",
+    maxSockets: 6,
   },
   {
     id: 2,
     name: "breastplate",
     img: "images/armor/breastplate.gif",
+    maxSockets: 6,
   },
   {
     id: 3,
     name: "chainmail",
     img: "images/armor/chainmail.gif",
+    maxSockets: 6,
   },
   {
     id: 4,
     name: "gothicplate",
     img: "images/armor/gothicplate.gif",
+    maxSockets: 6,
   },
   {
     id: 5,
     name: "ringmail",
     img: "images/armor/ringmail.gif",
+    maxSockets: 6,
   },
 ];
 // Ранее список
